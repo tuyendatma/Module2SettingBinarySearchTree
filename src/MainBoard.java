@@ -10,6 +10,7 @@ public class MainBoard {
         tree.insert("Peter");
         tree.insert("Daniel");
         //traverse tree
+        System.out.println(tree.BinarySearchTree("To0m"));
         System.out.println("Inorder (sorted): ");
         tree.inorder();
         System.out.println("The number of nodes is: " + tree.getSize());

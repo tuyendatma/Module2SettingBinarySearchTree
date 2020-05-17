@@ -55,6 +55,24 @@ public class BST<E extends Comparable<E>>extends AbstractTree<E> {
         System.out.println(root.element + " ");
         inorder(root.right);
     }
+    //bai tap search
+    public boolean BinarySearchTree(E element){
+        TreeNode<E> current = root;
+        if(current == null){
+            return false;
+        }
+        else {
+            while (current != null){
+                if(element.compareTo(current.element)<0){
+                    current = current.left;
+                }else if(element.compareTo(current.element)>0){
+                    current = current.right;
+                }else return true;
+            }
+        }
+        return false;
+    }
+
 }
 
 
